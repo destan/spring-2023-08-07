@@ -1,16 +1,12 @@
 package com.example.demo;
 
-
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.security.Principal;
-import java.time.LocalDate;
 import java.util.*;
 
 @Controller
@@ -39,10 +35,10 @@ public class DemoController {
     @PostMapping("hello")
     ResponseEntity<User> helloPost(User user) {
 
-        System.out.println(user.username());
-        System.out.println(user.age());
+        System.out.println(user.getUsername());
+        // System.out.println(user.getProfile().getAge());
 
-        if ("john".equals(user.username())) {
+        if ("john".equals(user.getUsername())) {
             return ResponseEntity.notFound().build();
         }
 
@@ -53,21 +49,20 @@ public class DemoController {
     @PostMapping("sample")
     String sample(User user, HttpServletRequest request, HttpSession httpSession) {
         // httpSession.setAttribute("authenticated", true);
-        return user.username();
+        return user.getUsername();
     }
 
     @ResponseBody
     @GetMapping("sample")
     String sampleGet(HttpServletRequest request, HttpSession httpSession) {
-        Arrays.asList(request.getCookies())
-                .forEach(cookie -> System.out.println(cookie.getName() + " = " + cookie.getValue()));
+        Arrays.asList(request.getCookies()).forEach(cookie -> System.out.println(cookie.getName() + " = " + cookie.getValue()));
         return httpSession.getId();
     }
 
     @ResponseBody
     @PostMapping("hello/json")
     String helloJson(@RequestBody User user) {
-        return "Hello world " + user.username();
+        return "Hello world " + user.getUsername();
     }
 
 }
