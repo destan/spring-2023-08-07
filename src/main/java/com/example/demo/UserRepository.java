@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    //@Query(value = "SELECT u FROM User u WHERE u.username = :username")
+    @Query(value = "SELECT u FROM User u WHERE u.username = :username")
     List<User> findByUsername(String username);
 
     @Query(value = "SELECT u FROM User u LEFT JOIN FETCH u.posts LEFT JOIN FETCH u.profile")

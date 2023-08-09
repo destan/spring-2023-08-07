@@ -1,8 +1,13 @@
 package com.example.demo;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,7 +16,7 @@ import java.util.Optional;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("users")
-public class UserController {
+class UserController {
 
     private final UserService usersService;
 
@@ -19,6 +24,13 @@ public class UserController {
     // public UserController(UserService usersService) {
     //     this.usersService = usersService;
     // }
+
+    private final ProfileValidator profileValidator;
+
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
+        binder.addValidators(profileValidator);
+    }
 
     @GetMapping
     List<User> list(@RequestParam("username") Optional<String> username) {
@@ -47,7 +59,13 @@ public class UserController {
     }
 
     @PutMapping("{userId}/profile")
-    ResponseEntity<Profile> updateProfile(@RequestBody Profile profile) {
+    ResponseEntity<Profile> updateProfile(@Valid @RequestBody Profile profile, BindingResult bindingResult) {
+
+        if (bindingResult.hasErrors()) {
+            bindingResult.getAllErrors().forEach(e -> System.out.println(e.getObjectName() + " " + e.getDefaultMessage()));
+            return ResponseEntity.status(HttpStatus.CONFLICT).build();
+        }
+
         return ResponseEntity.ok().build();
     }
 

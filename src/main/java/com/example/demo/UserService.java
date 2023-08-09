@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -31,7 +30,7 @@ public class UserService {
     }
 
     //@Transactional
-    public Profile updateProfile(Long userId, Profile profile) {
+    Profile updateProfile(Long userId, Profile profile) {
         Optional<User> userOptional = userRepository.findById(userId);
         if (userOptional.isEmpty()) {
             throw new IllegalArgumentException();//FIXME
@@ -62,11 +61,11 @@ public class UserService {
         userRepository.deleteById(id);
     }
 
-    public Optional<User> findById(Long id) {
+    Optional<User> findById(Long id) {
         return userRepository.findById(id);
     }
 
-    public List<User> findByUsername(String username) {
+    List<User> findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
 }

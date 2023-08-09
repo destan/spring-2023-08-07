@@ -1,34 +1,41 @@
 package com.example.demo;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Stream;
+import java.util.Optional;
 
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("posts")
-public class PostController {
+class PostController {
 
-    private final PostRepository postRepository;
-
-    private final TagRepository tagRepository;
+    private final PostService postService;
 
     @GetMapping
-    ResponseEntity<Page<Post>> list(Pageable pageable) {
+    ResponseEntity<Page<Post>> list(@RequestParam("tag") Optional<String> tagNameOptional, Pageable pageable) {
 
-        Page<Post> posts = postRepository.findAll(pageable);
+        if (tagNameOptional.isPresent()) {
+            String tagName = tagNameOptional.get();
+            Page<Post> result = postService.search(tagName, pageable);
+            return ResponseEntity.ok(result);
+        }
+
+        Page<Post> posts = postService.listAll(pageable);
+
+        return ResponseEntity.ok(posts);
+    }
+
+    @GetMapping("search")
+    ResponseEntity<Page<Post>> search(Pageable pageable, @RequestParam("tag") String tagName, @RequestParam("searchTerm") String searchTerm) {
+
+        Page<Post> posts = postService.search(tagName, searchTerm, pageable);
 
         return ResponseEntity.ok(posts);
     }
@@ -36,15 +43,9 @@ public class PostController {
     @PostMapping
     ResponseEntity<Post> create(@RequestBody Post post) {
 
-        Set<Tag> tags = post.getTags();
+        Post persistedPost = postService.createPost(post);
 
-        List<Tag> transientTags = tags.stream().filter(tag -> tag.getId() == null).toList();
-
-        //transientTags.forEach(tagRepository::save);
-
-        tagRepository.saveAll(transientTags);
-
-        return ResponseEntity.status(HttpStatus.CREATED).body(postRepository.save(post)); //xxx is post.tags[0] detached or managed?
+        return ResponseEntity.status(HttpStatus.CREATED).body(persistedPost); // xxx is post.tags[0] detached or managed?
     }
 
 }
