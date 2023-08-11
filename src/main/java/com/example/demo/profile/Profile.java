@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.profile;
 
+import com.example.demo.Alphanumeric;
+import com.example.demo.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;

@@ -1,12 +1,10 @@
 package com.example.demo;
 
+import com.example.demo.profile.Profile;
+import com.example.demo.profile.ProfileValidator;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,7 +27,7 @@ class UserController {
 
     @InitBinder
     public void initBinder(WebDataBinder binder) {
-        binder.addValidators(profileValidator);
+        //binder.addValidators(profileValidator);
     }
 
     @GetMapping
@@ -69,14 +67,14 @@ class UserController {
         return ResponseEntity.ok().build();
     }
 
-    @PatchMapping("{userId}/profile")
-    ResponseEntity<Profile> patchProfile(@PathVariable Long userId, @RequestBody Profile profile) {
-        try {
-            Profile updatedProfile = usersService.updateProfile(userId, profile);
-            return ResponseEntity.ok().body(updatedProfile);
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.notFound().build();
-        }
-    }
+    // @PatchMapping("{userId}/profile")
+    // ResponseEntity<Profile> patchProfile(@PathVariable Long userId, @RequestBody Profile profile) {
+    //     try {
+    //         Profile updatedProfile = usersService.updateProfile(userId, profile);
+    //         return ResponseEntity.ok().body(updatedProfile);
+    //     } catch (IllegalArgumentException e) {
+    //         return ResponseEntity.notFound().build();
+    //     }
+    // }
 
 }
