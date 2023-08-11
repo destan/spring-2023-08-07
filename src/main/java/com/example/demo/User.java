@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Objects;
 import java.util.Set;
 
 @Getter
@@ -34,4 +35,25 @@ public class User {
         this.profile = profile;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (this.getClass().equals(obj.getClass())) {
+            return false;
+        }
+        if (this.id != null && this.id.equals(((User)obj).getId())) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(this.id);
+    }
 }

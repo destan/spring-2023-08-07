@@ -5061,3 +5061,496 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2023-08-11 13:34:43.490 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
 2023-08-11 13:34:43.492 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.42 seconds (process running for 7096.254)
 2023-08-11 13:34:43.492 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 13:35:34.936 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-11 13:35:34.937 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:35:34.937 [Thread-35] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 13:35:34.938 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:35:34.939 [Thread-35] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:35:34.940 [Thread-35] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:35:34.941 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-9 - Shutdown initiated...
+2023-08-11 13:35:34.951 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-9 - Shutdown completed.
+2023-08-11 13:35:35.022 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 825312 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 13:35:35.022 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 13:35:35.022 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 13:35:35.102 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 13:35:35.109 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 6 ms. Found 4 JPA repository interfaces.
+2023-08-11 13:35:35.168 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 13:35:35.168 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:35:35.168 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 13:35:35.168 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 13:35:35.171 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 13:35:35.172 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 149 ms
+2023-08-11 13:35:35.182 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-10 - Starting...
+2023-08-11 13:35:35.185 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-10 - Added connection conn110: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 13:35:35.185 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-10 - Start completed.
+2023-08-11 13:35:35.185 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 13:35:35.204 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 13:35:35.207 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:35:35.207 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 13:35:35.219 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:35:35.243 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 13:35:35.244 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:35:35.435 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 13:35:35.440 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:35:35.441 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 13:35:35.444 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.438 seconds (process running for 7148.206)
+2023-08-11 13:35:35.445 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 13:36:20.884 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-11 13:36:20.886 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:36:20.886 [Thread-39] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 13:36:20.887 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:36:20.888 [Thread-39] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:36:20.888 [Thread-39] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:36:20.889 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-10 - Shutdown initiated...
+2023-08-11 13:36:20.899 [Thread-39] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-10 - Shutdown completed.
+2023-08-11 13:36:20.974 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 825312 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 13:36:20.974 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 13:36:20.974 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 13:36:21.069 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 13:36:21.076 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 6 ms. Found 4 JPA repository interfaces.
+2023-08-11 13:36:21.133 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 13:36:21.134 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:36:21.134 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 13:36:21.134 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 13:36:21.137 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 13:36:21.137 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 162 ms
+2023-08-11 13:36:21.147 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-11 - Starting...
+2023-08-11 13:36:21.151 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-11 - Added connection conn120: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 13:36:21.151 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-11 - Start completed.
+2023-08-11 13:36:21.151 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 13:36:21.168 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 13:36:21.171 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:36:21.171 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 13:36:21.183 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:36:21.208 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 13:36:21.209 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:36:21.385 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 13:36:21.391 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:36:21.392 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 13:36:21.394 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.436 seconds (process running for 7194.156)
+2023-08-11 13:36:21.395 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 13:36:30.103 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:36:30.103 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-11 - Shutdown initiated...
+2023-08-11 13:36:30.104 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-11 - Shutdown completed.
+2023-08-11 13:54:30.469 [background-preinit] INFO  o.h.validator.internal.util.Version -  -  - HV000001: Hibernate Validator 8.0.1.Final
+2023-08-11 13:54:30.487 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 842339 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 13:54:30.488 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 13:54:30.488 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 13:54:30.514 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  -  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-11 13:54:30.514 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  -  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-11 13:54:30.864 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 13:54:30.905 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
+2023-08-11 13:54:31.332 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 13:54:31.337 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:54:31.338 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 13:54:31.338 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 13:54:31.368 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 13:54:31.369 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 854 ms
+2023-08-11 13:54:31.393 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-1 - Starting...
+2023-08-11 13:54:31.526 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 13:54:31.527 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-1 - Start completed.
+2023-08-11 13:54:31.533 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 13:54:31.615 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 13:54:31.642 [restartedMain] INFO  org.hibernate.Version -  -  - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-11 13:54:31.643 [restartedMain] INFO  org.hibernate.cfg.Environment -  -  - HHH000406: Using bytecode reflection optimizer
+2023-08-11 13:54:31.710 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:54:31.776 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 13:54:31.941 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:54:32.338 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 13:54:32.358 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:54:32.588 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory -  -  - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-11 13:54:33.031 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 13:54:33.041 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:54:33.050 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 13:54:33.056 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 2.817 seconds (process running for 3.293)
+2023-08-11 13:54:58.728 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-11 13:54:58.729 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -  -  - Initializing Servlet 'dispatcherServlet'
+2023-08-11 13:54:58.730 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -  -  - Completed initialization in 0 ms
+2023-08-11 13:54:58.749 [http-nio-8080-exec-2] INFO  c.example.demo.TenantIdInterceptor -  - f523314e-25f3-4b0b-b294-750c6e083a6d - PRE HANDLE
+2023-08-11 13:54:58.853 [http-nio-8080-exec-2] INFO  c.example.demo.TenantIdInterceptor -  - f523314e-25f3-4b0b-b294-750c6e083a6d - POST HANDLE
+2023-08-11 13:54:58.854 [http-nio-8080-exec-2] INFO  c.example.demo.TenantIdInterceptor -  - f523314e-25f3-4b0b-b294-750c6e083a6d - AFTER COMPLETION
+2023-08-11 13:55:39.511 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2023-08-11 13:55:39.516 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:55:39.516 [Thread-6] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 13:55:39.517 [Thread-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-11 13:55:39.519 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:55:39.521 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:55:39.522 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:55:39.524 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-1 - Shutdown initiated...
+2023-08-11 13:55:39.542 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-1 - Shutdown completed.
+2023-08-11 13:55:39.625 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 842339 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 13:55:39.626 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 13:55:39.626 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 13:55:39.745 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 13:55:39.755 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2023-08-11 13:55:39.844 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 13:55:39.845 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:55:39.845 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 13:55:39.845 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 13:55:39.850 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 13:55:39.850 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 222 ms
+2023-08-11 13:55:39.863 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-2 - Starting...
+2023-08-11 13:55:39.871 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-2 - Added connection conn10: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 13:55:39.871 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-2 - Start completed.
+2023-08-11 13:55:39.871 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 13:55:39.898 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 13:55:39.902 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:55:39.902 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 13:55:39.917 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:55:39.961 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 13:55:39.963 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:55:40.177 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 13:55:40.182 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:55:40.183 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 13:55:40.186 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.596 seconds (process running for 70.423)
+2023-08-11 13:55:40.187 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 13:57:38.719 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-11 13:57:38.721 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:57:38.722 [Thread-8] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 13:57:38.724 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:57:38.725 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:57:38.726 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:57:38.726 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-2 - Shutdown initiated...
+2023-08-11 13:57:38.737 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-2 - Shutdown completed.
+2023-08-11 13:57:38.812 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 842339 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 13:57:38.812 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 13:57:38.812 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 13:57:38.899 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 13:57:38.907 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2023-08-11 13:57:38.967 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 13:57:38.968 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:57:38.968 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 13:57:38.968 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 13:57:38.972 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 13:57:38.972 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 158 ms
+2023-08-11 13:57:38.982 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-3 - Starting...
+2023-08-11 13:57:38.988 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-3 - Added connection conn20: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 13:57:38.988 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-3 - Start completed.
+2023-08-11 13:57:38.988 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 13:57:39.007 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 13:57:39.010 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:57:39.010 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 13:57:39.024 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 13:57:39.058 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 13:57:39.059 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 13:57:39.239 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 13:57:39.245 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 13:57:39.246 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 13:57:39.248 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.453 seconds (process running for 189.485)
+2023-08-11 13:57:39.249 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 14:17:56.005 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2023-08-11 14:17:56.012 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:17:56.012 [Thread-12] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 14:17:56.023 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:17:56.026 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:17:56.028 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:17:56.030 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-3 - Shutdown initiated...
+2023-08-11 14:17:56.044 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-3 - Shutdown completed.
+2023-08-11 14:17:56.165 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 842339 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:17:56.166 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:17:56.166 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:17:56.277 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:17:56.285 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:17:56.355 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:17:56.355 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:17:56.356 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:17:56.356 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:17:56.360 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:17:56.360 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 192 ms
+2023-08-11 14:17:56.370 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-4 - Starting...
+2023-08-11 14:17:56.376 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-4 - Added connection conn31: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:17:56.376 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-4 - Start completed.
+2023-08-11 14:17:56.376 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:17:56.397 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:17:56.402 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:17:56.402 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:17:56.418 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:17:56.453 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:17:56.454 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:17:56.661 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:17:56.666 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:17:56.667 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:17:56.670 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.538 seconds (process running for 1406.907)
+2023-08-11 14:17:56.670 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 14:20:40.221 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2023-08-11 14:20:40.222 [Thread-16] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:20:40.222 [Thread-16] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 14:20:40.224 [Thread-16] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:20:40.225 [Thread-16] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:20:40.226 [Thread-16] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:20:40.226 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-4 - Shutdown initiated...
+2023-08-11 14:20:40.236 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-4 - Shutdown completed.
+2023-08-11 14:20:40.315 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 842339 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:20:40.315 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:20:40.315 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:20:40.395 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:20:40.402 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 6 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:20:40.481 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:20:40.482 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:20:40.482 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:20:40.482 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:20:40.485 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:20:40.485 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 169 ms
+2023-08-11 14:20:40.495 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-5 - Starting...
+2023-08-11 14:20:40.499 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-5 - Added connection conn42: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:20:40.500 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-5 - Start completed.
+2023-08-11 14:20:40.500 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:20:40.517 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:20:40.520 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:20:40.520 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:20:40.532 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:20:40.560 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:20:40.561 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:20:40.745 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:20:40.750 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:20:40.751 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:20:40.753 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.455 seconds (process running for 1570.99)
+2023-08-11 14:20:40.754 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 14:20:45.747 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:20:45.748 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-5 - Shutdown initiated...
+2023-08-11 14:20:45.748 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-5 - Shutdown completed.
+2023-08-11 14:33:12.337 [background-preinit] INFO  o.h.validator.internal.util.Version -  -  - HV000001: Hibernate Validator 8.0.1.Final
+2023-08-11 14:33:12.357 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 848891 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:33:12.357 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:33:12.358 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:33:12.383 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  -  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-11 14:33:12.383 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  -  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-11 14:33:12.747 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:33:12.789 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:33:13.224 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:33:13.229 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:33:13.230 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:33:13.230 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:33:13.261 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:33:13.262 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 878 ms
+2023-08-11 14:33:13.285 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-1 - Starting...
+2023-08-11 14:33:13.421 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:33:13.422 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-1 - Start completed.
+2023-08-11 14:33:13.429 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:33:13.511 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:33:13.537 [restartedMain] INFO  org.hibernate.Version -  -  - HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-11 14:33:13.538 [restartedMain] INFO  org.hibernate.cfg.Environment -  -  - HHH000406: Using bytecode reflection optimizer
+2023-08-11 14:33:13.607 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:33:13.674 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:33:13.842 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:33:14.241 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:33:14.261 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:33:14.500 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory -  -  - Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-11 14:33:14.969 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:33:14.980 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:33:14.991 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:33:14.999 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 2.898 seconds (process running for 3.372)
+2023-08-11 14:33:24.441 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-11 14:33:24.441 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -  -  - Initializing Servlet 'dispatcherServlet'
+2023-08-11 14:33:24.442 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -  -  - Completed initialization in 0 ms
+2023-08-11 14:33:24.461 [http-nio-8080-exec-2] INFO  c.example.demo.TenantIdInterceptor -  - be6f8f6d-6dde-4a20-b1b3-868efffbf5d5 - PRE HANDLE
+2023-08-11 14:33:24.569 [http-nio-8080-exec-2] INFO  c.example.demo.TenantIdInterceptor -  - be6f8f6d-6dde-4a20-b1b3-868efffbf5d5 - POST HANDLE
+2023-08-11 14:33:24.569 [http-nio-8080-exec-2] INFO  c.example.demo.TenantIdInterceptor -  - be6f8f6d-6dde-4a20-b1b3-868efffbf5d5 - AFTER COMPLETION
+2023-08-11 14:40:26.214 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2023-08-11 14:40:26.220 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:40:26.220 [Thread-6] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 14:40:26.221 [Thread-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-11 14:40:26.222 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:40:26.224 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:40:26.226 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:40:26.228 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-1 - Shutdown initiated...
+2023-08-11 14:40:26.242 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-1 - Shutdown completed.
+2023-08-11 14:40:26.311 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 848891 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:40:26.311 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:40:26.311 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:40:26.416 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:40:26.426 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:40:26.499 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:40:26.499 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:40:26.499 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:40:26.500 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:40:26.505 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:40:26.505 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 193 ms
+2023-08-11 14:40:26.516 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-2 - Starting...
+2023-08-11 14:40:26.523 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-2 - Added connection conn10: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:40:26.524 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-2 - Start completed.
+2023-08-11 14:40:26.524 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:40:26.543 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:40:26.547 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:40:26.547 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:40:26.564 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:40:26.612 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:40:26.613 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:40:26.821 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:40:26.827 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:40:26.828 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:40:26.831 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.541 seconds (process running for 435.203)
+2023-08-11 14:40:26.832 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 14:50:08.185 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-08-11 14:50:08.187 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:08.187 [Thread-8] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 14:50:08.188 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:08.189 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:08.191 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:50:08.191 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-2 - Shutdown initiated...
+2023-08-11 14:50:08.204 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-2 - Shutdown completed.
+2023-08-11 14:50:08.277 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 848891 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:50:08.278 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:50:08.278 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:50:08.370 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:50:08.378 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:50:08.438 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:50:08.438 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:08.438 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:50:08.438 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:50:08.442 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:50:08.442 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 163 ms
+2023-08-11 14:50:08.452 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-3 - Starting...
+2023-08-11 14:50:08.458 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-3 - Added connection conn20: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:50:08.459 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-3 - Start completed.
+2023-08-11 14:50:08.459 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:50:08.483 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:50:08.486 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:50:08.486 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:50:08.499 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:50:08.533 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:50:08.534 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:50:08.723 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:50:08.728 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:08.729 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:50:08.732 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.475 seconds (process running for 1017.105)
+2023-08-11 14:50:08.733 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 14:50:34.949 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2023-08-11 14:50:34.951 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:34.951 [Thread-12] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 14:50:34.952 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:34.953 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:34.953 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:50:34.954 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-3 - Shutdown initiated...
+2023-08-11 14:50:34.965 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-3 - Shutdown completed.
+2023-08-11 14:50:35.039 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 848891 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:50:35.040 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:50:35.040 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:50:35.131 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:50:35.138 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:50:35.195 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:50:35.196 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:35.196 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:50:35.196 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:50:35.200 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:50:35.200 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 158 ms
+2023-08-11 14:50:35.210 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-4 - Starting...
+2023-08-11 14:50:35.216 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-4 - Added connection conn30: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:50:35.216 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-4 - Start completed.
+2023-08-11 14:50:35.216 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:50:35.233 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:50:35.237 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:50:35.237 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:50:35.253 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:50:35.287 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:50:35.288 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:50:35.474 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:50:35.479 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:50:35.480 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:50:35.483 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.464 seconds (process running for 1043.855)
+2023-08-11 14:50:35.483 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 14:52:56.421 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-08-11 14:52:56.423 [Thread-16] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:52:56.423 [Thread-16] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 14:52:56.424 [Thread-16] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:52:56.425 [Thread-16] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:52:56.425 [Thread-16] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:52:56.426 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-4 - Shutdown initiated...
+2023-08-11 14:52:56.429 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-4 - Shutdown completed.
+2023-08-11 14:52:56.510 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 848891 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:52:56.510 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:52:56.510 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:52:56.596 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:52:56.603 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 6 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:52:56.661 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:52:56.662 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:52:56.662 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:52:56.662 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:52:56.668 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:52:56.668 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 157 ms
+2023-08-11 14:52:56.682 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-5 - Starting...
+2023-08-11 14:52:56.687 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-5 - Added connection conn40: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:52:56.687 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-5 - Start completed.
+2023-08-11 14:52:56.687 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:52:56.705 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:52:56.708 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:52:56.708 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:52:56.720 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:52:56.751 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:52:56.752 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:52:56.955 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:52:56.962 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:52:56.963 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:52:56.965 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.478 seconds (process running for 1185.338)
+2023-08-11 14:52:56.967 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 14:59:09.729 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-08-11 14:59:09.731 [Thread-20] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:09.731 [Thread-20] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 14:59:09.733 [Thread-20] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:09.733 [Thread-20] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:09.734 [Thread-20] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:59:09.735 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-5 - Shutdown initiated...
+2023-08-11 14:59:09.745 [Thread-20] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-5 - Shutdown completed.
+2023-08-11 14:59:09.832 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 848891 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:59:09.832 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:59:09.832 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:59:09.928 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:59:09.938 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:59:10.011 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:59:10.011 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:10.011 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:59:10.011 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:59:10.015 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:59:10.015 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 182 ms
+2023-08-11 14:59:10.025 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-6 - Starting...
+2023-08-11 14:59:10.030 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-6 - Added connection conn50: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:59:10.031 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-6 - Start completed.
+2023-08-11 14:59:10.031 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:59:10.052 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:59:10.057 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:59:10.057 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:59:10.074 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:59:10.114 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:59:10.116 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:59:10.373 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:59:10.378 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:10.379 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:59:10.381 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.573 seconds (process running for 1558.754)
+2023-08-11 14:59:10.382 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 14:59:11.776 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener -  -  - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-08-11 14:59:11.778 [Thread-24] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:11.778 [Thread-24] INFO  o.a.catalina.core.StandardService -  -  - Stopping service [Tomcat]
+2023-08-11 14:59:11.779 [Thread-24] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:11.780 [Thread-24] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:11.781 [Thread-24] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:59:11.782 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-6 - Shutdown initiated...
+2023-08-11 14:59:11.794 [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-6 - Shutdown completed.
+2023-08-11 14:59:11.888 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Starting DemoApplication using Java 17.0.5 with PID 848891 (/home/destan/Desktop/demo/target/classes started by destan in /home/destan/Desktop/demo)
+2023-08-11 14:59:11.888 [restartedMain] DEBUG com.example.demo.DemoApplication -  -  - Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-11 14:59:11.888 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - No active profile set, falling back to 1 default profile: "dev"
+2023-08-11 14:59:11.978 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-11 14:59:11.987 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -  -  - Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2023-08-11 14:59:12.050 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat initialized with port(s): 8080 (http)
+2023-08-11 14:59:12.051 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:12.051 [restartedMain] INFO  o.a.catalina.core.StandardService -  -  - Starting service [Tomcat]
+2023-08-11 14:59:12.051 [restartedMain] INFO  o.a.catalina.core.StandardEngine -  -  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-11 14:59:12.055 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -  -  - Initializing Spring embedded WebApplicationContext
+2023-08-11 14:59:12.055 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -  -  - Root WebApplicationContext: initialization completed in 166 ms
+2023-08-11 14:59:12.065 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-7 - Starting...
+2023-08-11 14:59:12.072 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool -  -  - HikariPool-7 - Added connection conn60: url=jdbc:h2:file:/home/destan/Desktop/demodb user=SA
+2023-08-11 14:59:12.073 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-7 - Start completed.
+2023-08-11 14:59:12.073 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration -  -  - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/destan/Desktop/demodb'
+2023-08-11 14:59:12.096 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper -  -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-11 14:59:12.099 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:59:12.100 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -  -  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-11 14:59:12.114 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator -  -  - HHH000021: Bytecode provider name : bytebuddy
+2023-08-11 14:59:12.143 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -  -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-11 14:59:12.144 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 14:59:12.368 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -  -  - LiveReload server is running on port 35729
+2023-08-11 14:59:12.375 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -  -  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-11 14:59:12.377 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -  -  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-11 14:59:12.380 [restartedMain] INFO  com.example.demo.DemoApplication -  -  - Started DemoApplication in 0.514 seconds (process running for 1560.752)
+2023-08-11 14:59:12.380 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -  -  - Condition evaluation unchanged
+2023-08-11 15:09:17.566 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -  -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-11 15:09:17.566 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-7 - Shutdown initiated...
+2023-08-11 15:09:17.566 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  -  - HikariPool-7 - Shutdown completed.
