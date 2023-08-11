@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,6 +20,7 @@ public class Profile {
 
     @NotBlank
     @Alphanumeric
+    //@Pattern(regexp = "^[a-zA-Z0-9]+$")
     private String name;
 
     @Min(16)

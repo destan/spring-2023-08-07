@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
 @Constraint(validatedBy = AlphanumericValidator.class)
 public @interface Alphanumeric {
 
-    String message() default "Invalid string value";
+    String message() default "{Alphanumeric.profile.name}";
 
     Class<?>[] groups() default {};
 

@@ -1,0 +1,6 @@
+
+java-blog:
+  default-hello: Hello (dev)
+  hello-repeat-time: 2
+  profile:
+    url-length: 15

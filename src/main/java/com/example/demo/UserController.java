@@ -59,19 +59,24 @@ class UserController {
     }
 
     @PutMapping("{userId}/profile")
-    ResponseEntity<Profile> updateProfile(@Valid @RequestBody Profile profile, BindingResult bindingResult) {
+    ResponseEntity<Profile> updateProfile(@Valid @RequestBody Profile profile) {
 
-        if (bindingResult.hasErrors()) {
-            bindingResult.getAllErrors().forEach(e -> System.out.println(e.getObjectName() + " " + e.getDefaultMessage()));
-            return ResponseEntity.status(HttpStatus.CONFLICT).build();
-        }
+        // if (bindingResult.hasErrors()) {
+        //     bindingResult.getAllErrors().forEach(e -> System.out.println(e.getObjectName() + " " + e.getDefaultMessage()));
+        //     return ResponseEntity.status(HttpStatus.CONFLICT).build();
+        // }
 
         return ResponseEntity.ok().build();
     }
 
     @PatchMapping("{userId}/profile")
     ResponseEntity<Profile> patchProfile(@PathVariable Long userId, @RequestBody Profile profile) {
-        return ResponseEntity.ok().body(usersService.updateProfile(userId, profile));
+        try {
+            Profile updatedProfile = usersService.updateProfile(userId, profile);
+            return ResponseEntity.ok().body(updatedProfile);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.notFound().build();
+        }
     }
 
 }

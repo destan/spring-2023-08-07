@@ -1,0 +1,15 @@
+#spring:
+#  datasource:
+#    driver-class-name: org.h2.Driver
+#    username: ${db.username}
+#    password: ${db.password}
+#    url: ${db.connection.string}
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+
+
+java-blog:
+  default-hello: Hello
+  hello-repeat-time: 3
+  profile:
+    url-length: 15

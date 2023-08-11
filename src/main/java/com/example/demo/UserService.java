@@ -1,7 +1,10 @@
 package com.example.demo;
 
+import com.example.demo.aspect.Measured;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,6 +23,7 @@ public class UserService {
         return user;
     }
 
+    @Measured
     List<User> listAll() {
 
         return userRepository.findAllWithPosts();
@@ -30,10 +34,12 @@ public class UserService {
     }
 
     //@Transactional
-    Profile updateProfile(Long userId, Profile profile) {
+    Profile updateProfile(Long userId, Profile profile) throws UserNotFoundException {
         Optional<User> userOptional = userRepository.findById(userId);
         if (userOptional.isEmpty()) {
-            throw new IllegalArgumentException();//FIXME
+            // throw new IllegalArgumentException();
+            // throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+            throw new UserNotFoundException("User with id %s does not exist!".formatted(userId));
         }
 
         final User user = userOptional.get();

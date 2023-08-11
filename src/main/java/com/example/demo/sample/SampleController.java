@@ -1,9 +1,12 @@
-package com.example.demo;
+package com.example.demo.sample;
 
+import com.example.demo.User;
+import com.example.demo.aspect.MeasureUnit;
+import com.example.demo.aspect.Measured;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Pageable;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -11,17 +14,24 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
+import static com.example.demo.aspect.MeasureUnit.*;
+
 @Controller
 @RequiredArgsConstructor
-public class DemoController {
+public class SampleController {
 
-    private final PostService postService;
+    private final SampleService sampleService;
 
+    @Measured(NANOSECOND)
     @ResponseBody
     @GetMapping("hello")
-    String hello(@RequestParam(value = "name", required = false) Optional<String> name) {
-        postService.search("", Pageable.unpaged());
-        return "Hello world " + name;
+    String hello(@RequestParam(value = "name", required = false) Optional<String> name,
+                 @Value("${java-blog.default-hello}") String defaultHello,
+                 @Value("${java-blog.hello-repeat-time}") int helloTime) {
+
+        sampleService.doWork();
+
+        return (defaultHello + " world " + name.orElse("") + "\n").repeat(helloTime);
     }
 
     @ResponseBody

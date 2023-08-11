@@ -15,7 +15,17 @@ spring:
         format_sql: true
 
     open-in-view: false # N+1
+  profiles:
+    default: dev
 
 logging:
   level:
+    com.example.demo.ApplicationExceptionHandler: TRACE
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com.example.demo: DEBUG
+
+java-blog:
+  default-hello: Hello
+  hello-repeat-time: 3
+  profile:
+    url-length: 15
