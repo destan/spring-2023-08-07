@@ -36,7 +36,7 @@ class UserController {
     List<User> list(@RequestParam("username") Optional<String> username) {
 
         if (username.isPresent()) {
-            return usersService.findByUsername(username.get());
+            return List.of(usersService.findByUsername(username.get()).orElse(null));
         }
 
         return usersService.listAll();

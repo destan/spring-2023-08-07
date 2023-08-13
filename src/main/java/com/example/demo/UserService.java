@@ -3,6 +3,7 @@ package com.example.demo;
 import com.example.demo.aspect.Measured;
 import com.example.demo.profile.Profile;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,8 +15,12 @@ public class UserService {
 
     private final UserRepository userRepository;
 
+    private final PasswordEncoder passwordEncoder;
 
     User register(User user) {
+
+        final String encodedPassword = passwordEncoder.encode(user.getPassword());
+        user.setPassword(encodedPassword);
 
         userRepository.save(user);
 
@@ -70,7 +75,7 @@ public class UserService {
         return userRepository.findById(id);
     }
 
-    List<User> findByUsername(String username) {
+    Optional<User> findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
 }
